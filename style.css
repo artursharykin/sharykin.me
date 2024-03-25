@@ -11,6 +11,89 @@ body, h1 {
     padding: 0;
 }
 
+@media (max-width: 845px) {
+    .header-title {
+        font-size: 24px;
+        margin-top: 5%;
+        text-align: center;
+        width: 90%
+    }
+    .description{
+        
+        font-size: 12px;
+        padding-top: 5px;
+        text-align: center;
+        width: 90%;
+    }
+    .navigation {
+        position: relative; /* Change position to relative */
+        top: auto !important;
+        right: 10% !important;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%; /* Ensure navigation spans the full width */
+    }
+    .nav-link {
+        display: block;
+        margin: 10px;
+        margin-left: 0 !important;
+        text-align: center;
+    }
+    .center-text h2 {
+        margin-top: 15%;
+        font-size: 30px !important;
+        text-align: center;
+        width: 100%;
+    }
+    .center-text {
+        position: relative; 
+        width: 95%;
+        margin-top: 50px;
+    }
+
+    .header{
+        padding: 0px 0;
+    }
+
+    .about-container {
+        align-items: center; /* Center horizontally */
+        padding-top: 50px; /* Adjust padding */
+        margin-top: 20%;
+    }
+
+    .about-text {
+        padding: 20px; /* Add padding */
+        font-size: 18px;
+        text-align: center; /* Center text */
+        width: 90%;        
+
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .work-experience h1{
+        font-size:30px;
+        padding-top:25%;
+        text-align: center;
+    }
+    
+    .work-experience h2{
+        font-size:22px;
+    }
+    
+    .work-experience p{
+        width:85%;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .work-experience img.company-logo{
+        display:block;
+        margin: 0 auto;
+    }
+}
 
 header {
     position: fixed; 
@@ -48,7 +131,6 @@ body {
     max-width: 1000px;
 }
 
-
 .description{
     font-size:15px;
     color:#fffffff1;
@@ -70,7 +152,7 @@ body {
 }
 
 .center-text h2{
-    font-size: 45px !important;
+    font-size: 45px;
     color:#fffffff1;
 }
 
@@ -108,6 +190,68 @@ body {
 
 .nav-link:hover {
     text-decoration: underline; 
+}
+
+.social-buttons {
+    display: inline-block; /* Ensure it aligns horizontally */
+    margin-left: 70px; /* Adjust spacing */
+}
+
+
+.github-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fffffff1; 
+    padding: 0px; /* Future Self: Padding of the hover/glowup element */
+    height: 24px; 
+    width: 24px;
+    line-height: 0px;
+    background-color: transparent;
+}
+
+/* Optional: Adjust icon size */
+.github-button .fab.fa-github {
+    font-size: 20px;
+}
+
+/* CSS for Email button */
+.email-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fffffff1;
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    line-height: 0px; /* Vertically center the icon */
+    background-color: transparent; /* Set background to transparent */
+    margin-left: 60px; 
+}
+
+/* Optional: Adjust icon size */
+.email-button .fas.fa-envelope {
+    font-size: 20px;
+}
+
+.about-container {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; /* Prevent vertical scrolling */
+}
+
+.about-text {
+    flex: 2; 
+    padding: 0 20px; 
+    max-width: 800px; /* Limit the width of the text container */
+}
+
+.about-image img {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
 }
 
 .about-image img {
