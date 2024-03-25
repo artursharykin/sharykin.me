@@ -11,48 +11,47 @@ body, h1 {
     padding: 0;
 }
 
-/* Styling header */
+
 header {
-    position: fixed; /* Fixed position to stay at the top */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #112D32; /* Header background color */
-    padding: 10px 0px; /* Adjust padding according to your preference */
-    z-index: 1000; /* Ensure the header is above other content */
+    background-color: #212730; 
+    padding: 10px 0px; 
+    z-index: 1000; 
 }
 
-/* Styling header title */
 .header-title {
-    font-size: 45px; /* Adjust font size */
-    font-weight: bold; /* Make text bold */
-    color: #fff; /* Text color */
+    font-size: 45px; 
+    font-weight: bold; 
+    color: #fff; 
 }
 
-/* Styling anchor (link) */
+
 .header-title a {
-    color: inherit; /* Inherit color from parent */
-    text-decoration: underline; /* Remove default underline */
+    color: inherit; 
+    text-decoration: underline; 
 }
 
-/* Styling anchor hover effect */
+
 .header-title a:hover {
-    text-decoration: underline dotted; /* Remove underline on hover */
-    color: #fff;
+    text-decoration: underline dotted; 
+    color: #fffffff1;
 }
 
 body {
-    background-color: #112D32; /* Creamy background color */
+    background-color:#212730; 
     font: normal 20px/1.4 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     margin: 0 auto;
-    color:#fff;
+    color:#fffffff1;
     max-width: 1000px;
 }
 
 
 .description{
     font-size:15px;
-    color:#FFF;
+    color:#fffffff1;
     margin-top:-5px;
     
 }
@@ -72,22 +71,22 @@ body {
 
 .center-text h2{
     font-size: 45px !important;
-    color:#fff;
+    color:#fffffff1;
 }
 
 .center-text h2 a{
-    color:#fff;
+    color:#fffffff1;
     margin-right: 0px;
 
 }
 
 .center-text a{
-    color:#fff;
+    color:#fffffff1;
 }
 
 .center-text a:hover {
-    text-decoration: underline dotted; /* Remove underline on hover */
-    color: #fff;
+    text-decoration: underline dotted; 
+    color: #fffffff1;
 }
 
 
@@ -99,14 +98,27 @@ body {
 }
 
 .nav-link {
-    display: inline-block; /* Display links inline */
-    margin-left: 50px; /* Adjust the spacing between links */
+    display: inline-block; 
+    margin-left: 50px; 
     text-decoration: none;
-    color: #fff; /* Adjust the color of the links */
-    font-family: "Open Sans", sans-serif; /* Adjust the font */
-    font-size: 16px; /* Adjust the font size */
+    color: #fffffff1; 
+    font-family: "Open Sans", sans-serif; 
+    font-size: 16px; 
 }
 
 .nav-link:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
+}
+
+.about-image img {
+    border-radius:50%;
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.separator {
+    border: none; /* Remove default border */
+    border-top: 1px solid #ffffff80; /* Set the style, color, and opacity of the border */
+    margin: 20px 0; /* Adjust margin for spacing */
 }
