@@ -346,10 +346,28 @@ body {
 
 .keywords{
     color:#ffffff80;
+    margin-top: 0px;
     font-size: 14px;
 }
 
 .webpagetest-link{
     color:#fffffff1;
     text-decoration: none;
+}
+
+
+.ongoing-projects{
+    margin-top: 3%;
+    text-align:left;
+}
+
+.project-name{
+    color:#fffffff1;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.objectives, .summary{
+    font-size: 18px;
 }
