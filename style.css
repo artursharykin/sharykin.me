@@ -343,3 +343,13 @@ body {
     border-top: 1px solid #ffffff80; 
     margin: 20px 0; 
 }
+
+.keywords{
+    color:#ffffff80;
+    font-size: 14px;
+}
+
+.webpagetest-link{
+    color:#fffffff1;
+    text-decoration: none;
+}
