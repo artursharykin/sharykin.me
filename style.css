@@ -344,6 +344,12 @@ body {
     margin: 20px 0; 
 }
 
+.separator-special{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-top: 3px solid #ffffff80;
+}
+
 .keywords{
     color:#ffffff80;
     margin-top: 0px;
