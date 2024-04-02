@@ -1,2 +1,2 @@
-{"name":"Artur Sharykin","short_name":"sharykin.me","background_color":"#212730","theme_color":"#212730","description":"Mechanical Engineer @ UAlberta | Currently Westport Fuel Systems","start_url": "https://sharykin.me","orientation": "portrait",
+{"name":"Artur Sharykin","short_name":"sharykin.me","background_color":"#212730","theme_color":"#212730","description":"Mechanical Engineer @ UAlberta | Currently Westport Fuel Systems","orientation": "portrait",
 "icons":[{"src":"images/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"images/android-chrome-512x512.png","sizes":"512x512","type":"image/png"},{"src":"images/maskable_icon_x192.png","sizes":"192x192","type":"image/png","purpose": "maskable"}],"display":"standalone"}
