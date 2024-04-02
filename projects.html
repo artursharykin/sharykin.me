@@ -32,11 +32,11 @@
 		<link rel="canonical" href="https://sharykin.me/">
 		<link rel="preconnect" href="https://www.googletagmanager.com">
 		<link rel="preconnect" href="https://www.google-analytics.com">
-		<link rel="preconnect" href="https://cdn.getforge.com">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel="apple-touch-startup-image" href="apple-touch-icon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="cdnjs.cloudflare.com">
+        <link rel="preconnect" href="fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -109,18 +109,36 @@
             </div>
             <div class="past-projects">
                 <h1>Completed Projects</h1>
+                <h2 class="project-name">Overwatch 2 Leaderboard OCR Tool</h2>
+                <p class="keywords">Keywords: C++, C#, Python, PyTesseract</p>
+                <p class="objectives">Objectives: Using a Python fork of Google's Tesseract OCR, develop a full fledged program capable of taking screenshots, processing the data of the screenshot and uploading the results to a .csv file.</p>
+                <p class="summary">Summary: Starting with a debate between me and a good friend on which players on our team were statistically underperforming, a need for automated data collection rose as tracking the high number of variables
+                    became a time-consuming process. Starting out by developing a lightweight screenshot program in C++, this was my first 'serious' C++ project and the first real project that required proper safe memory handling and allocation,
+                    also my introduction to garbage collection (<i>countless times I shot myself in the foot and crashed my PC</i>). The screenshot program's hardest challenge was ensuring that thread-processes would not 'interrupt' others and cause
+                    frame skips and drops when in game. After developing the screenshot tool, I began to develop an OCR using Google's PyTesseract- at the time I chose Python because it seemed like the easiest language to make the AI in, which came out 
+                    to be a major mistake later on, after developing a bare bones version- the AI was trained using my own data and images that I had from before. One of the largest challenges throughout this project was to ensure AI OCR accuracy, early
+                    iterations had roughly 65% accuracy, which for OCR was very lackluster. After some help with chroma filters, deskew, and image sharpening from a fellow peer, the accuracy shot up to around 95%, which for the sake of this project, I 
+                    declared as 'good enough for now'. The final (and arguably hardest) step was combining both programs into an application form using C#, combining both programs was incredibly tedious, as the Python program would not listen to certain 
+                    commands when given input through C#, but when manually commanded through Python- it would react properly. Combining both programs and adding a functional UI was a rough first introduction into fullstack development, and if I was to go 
+                    back I would certainly not use python for the OCR process, opting for C++ or Rust instead.
+                </p>
+                <hr class="separator">
                 <h2 class="project-name">Dyno Driveshaft Model</h2>
                 <p class="keywords">Keywords: Reverse Engineering, SOLIDWORKS</p>
                 <p class="objectives">Objectives: Reverse engineer model a driveshaft in SOLIDWORKS to an accuracy of a 0.001".</p>
                 <p class="summary">Summary: A personal project turned work project- this projects purpose was to make an in-house model of a driveshaft used in a dyno cell configuration without having to outsource the work, using a digital caliper &
                      micrometer, each part required precise measurement and referencing old ISO standards for dimension ratios. Due to its shapely design, the SAE 1550 Flange Yoke came out to be the hardest part to design, as measurements provided in 
                      correlating documentation came out unclear and lacked required precision, to combat this issue: I traced the outline of the shape, photo scanned and input the file into SOLIDWORKS, using a reference dimension I was able to correctly
-                    scale the trace and make a perfect replica of the shape of the flange yoke. </p>
+                     scale the trace and make a perfect replica of the shape of the flange yoke. </p>
                 <hr class="separator">
-                <h2 class="project-name">Overwatch 2 Leaderboard OCR Tool</h2>
-                <p class="keywords">Keywords: C++, C#, Python, PyTesseract</p>
-                <p class="objectives">Objectives: Using a Python fork of Google's Tesseract OCR, develop a full fledged program capable of taking screenshots, processing the data of the screenshot and uploading the results to a .csv file.</p>
-                <p class="summary">Summary: </p>
+                <h2 class="project-name">Steam Spam Caller</h2>
+                <p class="keywords">Keywords: AutoHotKey, Git</p>
+                <p class="objectives">Objectives: Using AutoHotKey, design a macro that is able to continuously call someone on Steam. An introduction to using Git related features.
+                <p class="summary">Summary: The Steam call sound effect is incredibly annoying, like a bell ringing except the audio jumps between left-right channels. Me and my friends would often spam call one another on Steam to spite one another, and
+                    after realizing the manual labor wasn't needed, I began developing an AutoHotKey script that used keyboard shortcuts to continuously call someone. This projects main purpose was to introduce me to Git conventions and how to properly use
+                    source-control.
+                </p>
+
             </div>
         </div>
     </body>
