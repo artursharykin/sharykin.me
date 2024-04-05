@@ -1,3 +1,8 @@
+:root{
+    --seperator-border-color: #ffffff80;
+}
+
+
 .open-sans-general {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -251,6 +256,38 @@ body {
     color: #fffffff1;
 }
 
+body.dark-mode{
+    background-color: #212730;
+    color: #fffffff1;
+    --seperator-border-color: #ffffff;
+}
+
+body.light-mode{
+    background-color: #f0e7db;
+    color: #313131;
+    --separator-border-color: #616161;
+}
+
+body.dark-mode a, body.dark-mode p, body.dark-mode h1, body.dark-mode h2, body.dark-mode a:hover{
+    color:inherit;
+}
+
+body.light-mode a, body.light-mode p body.light-mode h1, body.light-mode h2, body.light-mode a:hover, body.light-mode{
+    color: inherit;
+}
+
+body.light-mode h2.description{
+    color: #919191;
+}
+
+.theme-toggle{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 .navigation {
     font-weight: bold;  
     display: flex;
@@ -352,8 +389,7 @@ body {
 }
 
 .separator {
-    border: none; 
-    border-top: 1px solid #ffffff80; 
+    border-top: 1px solid var(--separator-border-color); 
     margin: 20px 0; 
 }
 
