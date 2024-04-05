@@ -272,9 +272,18 @@ body.dark-mode a, body.dark-mode p, body.dark-mode h1, body.dark-mode h2, body.d
     color:inherit;
 }
 
-body.light-mode a, body.light-mode p body.light-mode h1, body.light-mode h2, body.light-mode a:hover, body.light-mode{
-    color: inherit;
+body.dark-mode .theme-toggle .fas{
+    color: #FFD700;
 }
+
+body.light-mode a, body.light-mode p body.light-mode h1, body.light-mode h2, body.light-mode a:hover{
+    color: inherit;
+
+}
+body.light-mode .theme-toggle .fas{
+    color: #5D3B76;
+}
+
 
 body.light-mode h2.description{
     color: #919191;
@@ -285,8 +294,9 @@ body.light-mode h2.description{
     background: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #fff;
+    color: #FFD700;
 }
+
 
 .navigation {
     font-weight: bold;  
