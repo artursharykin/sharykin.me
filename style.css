@@ -284,12 +284,20 @@ body {
 }
 
 .github-button,
-.email-button {
+.email-button,
+.resume-button {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #fffffff1;
     margin-left: 40px;
+    transition: filter 0.2s;
+}
+
+.github-button:hover,
+.email-button:hover,
+.resume-button:hover{
+    filter: brightness(75%);
 }
 
 .github-button .fab.fa-github {
@@ -298,6 +306,10 @@ body {
 
 .email-button .fas.fa-envelope{
     font-size: 40px !important;
+}
+
+.resume-button .fas.fa-file-alt{
+    font-size: 35px !important;
 }
 
 .about-container {
