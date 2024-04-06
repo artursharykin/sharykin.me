@@ -1,36 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleButton = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme');
+    const currentTheme = localStorage.getItem('theme') || 'dark-mode';
 
-    if (currentTheme) {
-        document.body.classList.add(currentTheme);
-        updateIcon(currentTheme); 
+    function applyTheme(theme) {
+        document.body.className = theme; 
+        localStorage.setItem('theme', theme); 
+        updateIcon(theme);
     }
 
-    themeToggleButton.addEventListener('click', () => {
-        if (document.body.classList.contains('light-mode')) {
-            document.body.classList.replace('light-mode', 'dark-mode');
-            localStorage.setItem('theme', 'dark-mode');
-            updateIcon('dark-mode');
-        } else {
-            document.body.classList.replace('dark-mode', 'light-mode');
-            localStorage.setItem('theme', 'light-mode');
-            updateIcon('light-mode');
-        }
-    });
+    function toggleTheme() {
+        const newTheme = document.body.classList.contains('dark-mode') ? 'light-mode' : 'dark-mode';
+        applyTheme(newTheme);
+    }
+
+    applyTheme(currentTheme);
+
+    themeToggleButton.addEventListener('click', toggleTheme);
 });
 
 function updateIcon(theme) {
     const themeToggleButton = document.getElementById('theme-toggle');
-    const currentThemeIcon = themeToggleButton.firstElementChild;
+    const icon = themeToggleButton.querySelector('i');
 
     if (theme === 'light-mode') {
-        currentThemeIcon.classList.remove('fa-sun');
-        currentThemeIcon.classList.add('fa-moon');
-        currentThemeIcon.style.color = '#5D3B76';
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     } else {
-        currentThemeIcon.classList.remove('fa-moon');
-        currentThemeIcon.classList.add('fa-sun');
-        currentThemeIcon.style.color = '#FFD700';
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
     }
 }
