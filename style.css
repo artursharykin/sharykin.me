@@ -267,7 +267,7 @@ body.light-mode{
     --separator-border-color: #616161;
 }
 
-body.dark-mode a, body.dark-mode p, body.dark-mode h1, body.dark-mode h2, body.dark-mode a:hover{
+body.dark-mode a, body.dark-mode p, body.dark-mode h1, body.dark-mode a:hover{
     color:inherit;
 }
 
@@ -297,6 +297,10 @@ body.light-mode p.company, body.light-mode p.work-time, body.light-mode p.locati
 
 body.light-mode h2.description{
     color: #919191;
+}
+
+body.light-mode .github-button:hover, body.light-mode .email-button:hover, body.light-mode .resume-button:hover {
+    filter: brightness(25%);
 }
 
 .theme-toggle{
