@@ -21,6 +21,8 @@
             })(window,document,'script','dataLayer','GTM-KXZMHLVS');
         </script>
         <!-- End Google Tag Manager -->
+        <script src="theme-toggle.js" defer></script>
+        <script src="sidemenu.js" defer></script>
         <link rel="image_src" href="https://2.gravatar.com/avatar/784eda19f32a98c24ace732b31eeef8a5716f56b3fb1531c794c2901bb53635e?size=256">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -74,7 +76,6 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <script src="theme-toggle.js" defer></script>
         <div class="head">
             <header class="head">
                 <div class="header-content">
@@ -99,6 +100,9 @@
                         <button id="theme-toggle" class="theme-toggle">
                             <i class="fas fa-sun"></i>
                         </button>
+                        <button id="menu-toggle" class="menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="description-container">
@@ -106,6 +110,31 @@
                 </div>
             </header>
         </div>
+        <aside id="side-menu" class="side-menu">
+            <div class="menu-header">
+                <button id="close-menu" class="close-menu">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <h2 class="table-contents">
+                    Navigation
+                </h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="workexp.html">Work Experience</a></li>
+                </ul>
+            </nav>
+            <div class="social-buttons">
+                <a href="https://github.com/artursharykin" target="_blank" title="My GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:artur.sharykin@gmail.com" title="Send Me an Email"><i class="fas fa-envelope"></i></a>
+                <a href="/resume.pdf" target="_blank" title="My Resume"><i class="fas fa-file-alt"></i></a>
+            </div>
+
+
+        </aside>
+
         <div class="container">
             <div class="work-experience">
                 <h1>Work Experience</h1>
@@ -129,9 +158,9 @@
                 <hr class="separator">
                 <img src="images/Kumon_Method_Logo.svg.png" alt="Kumon Logo" class="company-logo" width="202px" height="47px">
                 <h2>Teaching Assistant</h2>
-                <p>Kumon Edmonton Heritage · Permanent Part Time</p>
-                <p>August 2022 - August 2023 · 1 year</p>
-                <p>Edmonton, Alberta, Canada · Hybrid</p>
+                <p class="company">Kumon Edmonton Heritage · Permanent Part Time</p>
+                <p class="work-time">August 2022 - August 2023 · 1 year</p>
+                <p class="location">Edmonton, Alberta, Canada · Hybrid</p>
                 <ul>
                     <li>Assessed current math levels and helped plan optimal education strategies to help students improve analytical comprehension and test taking skills, helping over 30 students daily.</li>
                     <li>Tracked learning progress of over 50 students to identify areas of weakness and knowledge in students' mathematical knowledge.</li>

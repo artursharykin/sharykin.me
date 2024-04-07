@@ -22,17 +22,11 @@ body, html{
 }
 
 @media (max-width: 845px) {
-
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
     
     .header-title {
-        font-size: 24px;
+        font-size: 18px;
         margin-top: 5%;
-        text-align: center;
-        width: 90%;
+        text-align: left;
         margin-bottom: 0px;
         margin-left: 0px !important;
         margin-right: 0px !important;
@@ -40,6 +34,7 @@ body, html{
 
     .header-title a{
         margin: 0px !important;
+        font-size: 35px;
     }
 
     .social-buttons{
@@ -49,7 +44,6 @@ body, html{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-right: 20px; /* Hack fix, for some reason wont properly center, so manually move it right */
     }
 
     .description{
@@ -75,7 +69,7 @@ body, html{
         margin-top: 15%;
         font-size: 30px !important;
         text-align: center;
-        width: 80%;
+        width: 100%;
     }
     .center-text {
         display: flex;
@@ -136,8 +130,11 @@ body, html{
         line-height: 0px;
         background-color: transparent;
     }
-    
- 
+
+    .project-container .ongoing-projects{
+        margin-top: 10%;
+    }
+
     .github-button .fab.fa-github {
         font-size: 30px !important;
     }
@@ -155,20 +152,150 @@ body, html{
     .email-button .fas.fa-envelope {
         font-size: 30px !important;
     }
+
+    header .social-buttons, .navigation, .nav-link{
+        display: none;
+    }
+
+    .side-menu .social-buttons,
+    .side-menu .navigation,
+    .side-menu .nav-link {
+        display: flex;
+        font-size: 30px;
+    }
+
+    
+
+    .header-title {
+        flex-grow: 1;
+        font-size: 35px;
+    }
+
+    .header-title.open-sans-general{
+        font-size: 35px;
+    }
+    
+    .darklightmode-toggle {
+        display: flex;
+    }
+
+    .menu-toggle, .theme-toggle {
+        font-size: 20px;
+        background: none;
+        border: none;
+        margin-right: 5px;
+        color: #f1f1f1f1;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen to the right */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background: #212730; /* Background color */
+        z-index: 100; /* Ensure it's above other content */
+        transition: right 0.5s ease; /* Smooth transition for the animation */
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px; /* Padding around content */
+    } 
+
+    .side-menu nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .side-menu nav ul li{
+        margin-bottom: 60px;
+    }
+
+    .side-menu nav ul li a{
+        display: block;
+        font-size: 25px;
+        color: #f1f1f1f1;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+    .menu-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .close-menu {
+        background: transparent;
+        border: none;
+        color: #ffffff80;
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    .table-contents{
+        font-size: 50px;
+        align-self: flex-end;
+        color: #fff;
+        margin-right: 10px;
+        margin-top: 0px;
+        
+    }
+
+    .side-menu.open {
+        right: 0; /* Move into view */
+    }
+
+    body.dark-mode .side-menu{
+        background-color: #212730;
+        color: #f8f8f8f8;
+    }
+    
+    body.dark-mode .side-menu a{
+        color: #f8f8f8f8;
+    }
+
+    body.light-mode .menu-toggle{
+        color: #313131;
+    }
+
+    body.light-mode .side-menu{
+        background-color: #f0e7db;
+        color: #313131;
+    }
+
+    body.light-mode .side-menu a{
+        color: #313131;
+    }
+
+    body.light-mode .side-menu .close-menu{
+        color: #212121;
+    }
 }
 
+@media (min-width: 846px){
+    .side-menu,
+    #menu-toggle{
+    display: none; /* Dont show the menu-toggle in normal view */
+    }
 
+}
 body {
     background-color:#212730; 
     font: normal 20px/1.4 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     margin: 0 auto;
-    color:#fffffff1;
+    color:#FFFFFFde;
     max-width: 90%;
 }
 
 .description{
     font-size:15px;
-    color:#ffffff80;
+    color:#FFFFFFde;
     margin: 0px;
 }
 
@@ -188,7 +315,7 @@ body {
 
 .center-text h2{
     font-size: 45px;
-    color:#fffffff1;
+    color:#FFFFFFed;
     text-align: center;
     width: 80%;
 }
@@ -240,13 +367,13 @@ body {
 .header-title {
     font-size: 45px;
     font-weight: bold;
-    color: #fff;
+    color: #FFFFFFde;
     white-space: nowrap;
     margin: 0;
 }
 
 .header-title a {
-    color: inherit;
+    color: #FFFFFFde;
     text-decoration: underline;
 }
 
@@ -269,6 +396,14 @@ body.light-mode{
 
 body.dark-mode a, body.dark-mode p, body.dark-mode h1, body.dark-mode a:hover{
     color:inherit;
+}
+
+body.dark-mode .keywords{
+    color: #ffffff80;
+}
+
+body.dark-mode p.company, body.dark-mode p.work-time, body.dark-mode p.location{
+    color: #ffffffa6;
 }
 
 body.dark-mode .theme-toggle .fas{
@@ -409,6 +544,7 @@ body.light-mode .github-button:hover, body.light-mode .email-button:hover, body.
     border-radius:50%;
     width: 300px; 
     height: 300px; 
+    margin-right: 40px;
     object-fit: cover;
 }
 
@@ -419,8 +555,8 @@ body.light-mode .github-button:hover, body.light-mode .email-button:hover, body.
 
 .separator-special{
     margin-top: 30px;
-    margin-bottom: 50px;
-    border-top: 3px solid #ffffff80;
+    margin-bottom: 30px;
+    border-top: 3px solid var(--separator-border-color);
 }
 
 .keywords{

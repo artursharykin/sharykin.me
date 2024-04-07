@@ -21,6 +21,8 @@
             })(window,document,'script','dataLayer','GTM-KXZMHLVS');
         </script>
         <!-- End Google Tag Manager -->
+        <script src="theme-toggle.js" defer></script>
+        <script src="sidemenu.js" defer></script>
         <link rel="image_src" href="https://2.gravatar.com/avatar/784eda19f32a98c24ace732b31eeef8a5716f56b3fb1531c794c2901bb53635e?size=256">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -51,7 +53,6 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <script src="theme-toggle.js" defer></script>
         <div class="head">
             <header class="head">
                 <div class="header-content">
@@ -76,6 +77,9 @@
                         <button id="theme-toggle" class="theme-toggle">
                             <i class="fas fa-sun"></i>
                         </button>
+                        <button id="menu-toggle" class="menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="description-container">
@@ -83,9 +87,35 @@
                 </div>
             </header>
         </div>
+        <aside id="side-menu" class="side-menu">
+            <div class="menu-header">
+                <button id="close-menu" class="close-menu">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <h2 class="table-contents">
+                    Navigation
+                </h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="workexp.html">Work Experience</a></li>
+                </ul>
+            </nav>
+            <div class="social-buttons">
+                <a href="https://github.com/artursharykin" target="_blank" title="My GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:artur.sharykin@gmail.com" title="Send Me an Email"><i class="fas fa-envelope"></i></a>
+                <a href="/resume.pdf" target="_blank" title="My Resume"><i class="fas fa-file-alt"></i></a>
+            </div>
+
+
+        </aside>
+
         <div class="project-container">
             <div class="ongoing-projects">
                 <h1>Ongoing Projects</h1>
+                <hr class="separator">
                 <h2 class="project-name">sharykin.me</h2>
                 <p class="keywords">Keywords: HTML, CSS, JavaScript, Networking</p>
                 <p class="objectives">Objectives: Develop a portfolio website with a focus on performance and simple-aesthetics, gain proficiency in CSS, gain further experience with DNS & large-scale networking.</p>
@@ -145,7 +175,7 @@
                     after realizing the manual labor wasn't needed, I began developing an AutoHotKey script that used keyboard shortcuts to continuously call someone. This projects main purpose was to introduce me to Git conventions and how to properly use
                     source-control.
                 </p>
-
+                <hr class="separator">
             </div>
         </div>
     </body>
