@@ -404,6 +404,11 @@ body.dark-mode a, body.dark-mode p, body.dark-mode h1, body.dark-mode a:hover{
     color:inherit;
 }
 
+body.dark-mode h2.description{
+    color: #ffffff80;
+}
+
+
 body.dark-mode .keywords{
     color: #ffffff80;
 }
