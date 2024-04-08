@@ -196,11 +196,20 @@ body, html{
         background: #212730; /* Background color */
         z-index: 100; /* Ensure it's above other content */
         transition: right 0.5s ease; /* Smooth transition for the animation */
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         box-sizing: border-box;
         padding: 20px; /* Padding around content */
     } 
+
+    #menu-toggle{
+        padding-top: 10px;
+        display: flex !important;
+    }
+
+    #theme-toggle{
+        padding-top: 7px; /* Wow this is incredibly ugly, but this is the best fix to not have that weird first load error*/
+    }
 
     .side-menu nav ul{
         list-style-type: none;
@@ -278,12 +287,9 @@ body, html{
     }
 }
 
-@media (min-width: 846px){
-    .side-menu,
-    #menu-toggle{
-    display: none; /* Dont show the menu-toggle in normal view */
-    }
-
+.side-menu,
+#menu-toggle{
+    display:none;
 }
 body {
     background-color:#212730; 
