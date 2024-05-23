@@ -116,31 +116,45 @@
             <div class="ongoing-projects">
                 <h1>Ongoing Projects</h1>
                 <hr class="separator">
-                <h2 class="project-name">sharykin.me</h2>
-                <p class="keywords">Keywords: HTML, CSS, JavaScript, Networking</p>
-                <p class="objectives">Objectives: Develop a portfolio website with a focus on performance and simple-aesthetics, gain proficiency in CSS, gain further experience with DNS & large-scale networking.</p>
-                <p class="summary">Summary: The very website you're on <i>right now!</i> The priority of this website is <b>performance</b>, I implement lots
-                    of optimization on this website to try to improve the performance, accessibility, and SEO through the use of Google's Lighthouse developer feature and <a href="https://webpagetest.org" class="webpagetest-link">WebPageTest.org</a>
-                    , which both run emulated devices that load up the page in a virtual sandbox and find shortcomings in design to improve the aforementioned features. 
-                    Also the previous build of sharykin.me was frankly ugly, the site seemed like it was from the early 2000's- I went around this issue is by keeping a minimalistic approach and to give the reader a natural flow to follow on the website.
-                    I also used the domain as a part of a Cloudflare reverse-proxy configuration for my HomeLab server to increase the safety of my server by reducing the need for direct-ip connections, and increasing the performance and reliability of the connection to my HomeLab.
-               </p>
+                <h2 class="project-name">Coinbase Scalp</h2>
+                <p class="keywords">Keywords: PyTorch, API, JSON</p>
+                <p class="objectives">Objectives: Using Python, develop a program that can take in a user's API key and secret, and use it to make trades on the Coinbase Pro exchange.</p>
+                <p class="summary">
+                    <li>Integrated Coinbase Trading Pro API using Python script capable of calling orders, history, and historical prices of cryptocurrencies</li>
+                    <li>Developed tuneable ticker and indicator options to allow user to interpret different strategies for scalping</li>
+                    <li>Worked towards implementing a stock prediction analysis continuous machine learning model to help predict general market movements</li>
+                    <li>Gained heavy experience working with API, JSON, and PyTorch</li>
+                </p>
+                <hr class = "separator">
+                <h2 class="project-name">chatpunk</h2>
+                <p class="keywords">Keywords: PyTorch, LLM</p>
+                <p class="objectives">Objectives: Develop a fine-tuned version of Chat-Neo 125M capable of replicating Johnny Silverhand from Cyberpunk 2077</p>
+                <p class="summary">
+                    <li>Gained heavy experience in PyTorch applications for large language model fine-tuning</li>
+                    <li>Used HuggingFace dataset structure and best-practices</li>
+                    <li>Scraped data using Johnny Silverhand caption JSON files from Cyberpunk 2077 r6 and archive folder using WOLVENKIT</li>
+                    <li>Collected other forms of data through the use of Python scripts to collect data from web sources of general lore-related texts</li>
+                </p>
                 <hr class="separator">
                 <h2 class="project-name">HomeLab</h2>
                 <p class="keywords">Keywords: Linux, Bash, Docker, Networking</p>
                 <p class="objectives">Objectives: Build a home server running UnraidOS to create a hands-on learning environment for DevOps and ITOps.</p>
-                <p class="summary">Summary: The HomeLab's primary purpose was to provide server hosting for VoIP and game-server related services, but quickly evolved into
-                    a large media storage of 2x4TB hard drives running a specially tuned RAID 1 configuration, a docker client running cloud photo storage, Virtual Machines, and a playground to experiment with different technologies in a safe manner.
-                    My favorite HomeLab project was setting up a PiHole: a network-level adblock using DNS request filtering to remove malicious websites, advertisement sites, and tracker sites- blocking over 22% of all network requests made, 
-                    which increased both the safety and efficiency of my home network. I used a DuckDNS docker container to point towards a Cloudflare reverse-proxy to increase the safety of my HomeLabs connection to the internet.
+                <p class="summary">
+                    <li>Hosted VOIP and game-server services on a reverse-proxy configuration using DuckDNS docker contanier pointed towards Cloudflare reverse-proxy set up using personal domain</li>
+                    <li>Designed and configured 2x4TB hard drive solution running in a tuned RAID 1 configuration</li>
+                    <li>Gained experience using Docker containers, such as running self-hosted cloud photo storage</li>
+                    <li>Developed profieiency in virtualization, and optimization of network connected virtual environments</li>
+                    <li>Implemented Network PiHole, a network-level ad and tracker blocker using DNS request filtering, blocking 22% of requests and increasing website load times</li>
                 </p>
                 <hr class="separator">
                 <h2 class="project-name">Arduino ESP8266Wifi API</h2> 
-                <p class="keywords">Keywords: Arduino, C++, APIs</p>
+                <p class="keywords">Keywords: Arduino, C++, APIs, JSON</p>
                 <p class="objectives">Objectives: Assemble an Arduino with an ESP8266 Wifi chip, connect it to a weather API and display the weather on an LCD screen.</p>
-                <p class="summary">Summary: A device that is capable of showing the weather in my city, connecting to the local network and ensuring connection with API is safe, refusing to connect if
-                    website fingerprint doesn't match the expected fingerprint. I also invested a lot of time into writing good documentation for replicable steps for others, including appropriate code and circuit diagrams
-                    for the Arduino, LCD, and ESP8266 chip.
+                <p class="summary">
+                    <li>Developed precise and detailed documentation on hardware and software aspects of project</li>
+                    <li>Gained experience in safe API calls through the use of website fingerprint verification, and safe local network connections to prevent malicious web-attacks</li>
+                    <li>Gained experience working with embedded systems such as Arduino microcontrollers and ESP8266 chips</li>
+                    <li>Developed a simple and easy to use API for the Arduino to connect to the weather API, gaining expeience in API and JSON</li>
                 </p>
                 <hr class="separator-special">
             </div>
@@ -149,33 +163,38 @@
                 <h2 class="project-name">Overwatch 2 Leaderboard OCR Tool</h2>
                 <p class="keywords">Keywords: C++, C#, Python, PyTesseract</p>
                 <p class="objectives">Objectives: Using a Python fork of Google's Tesseract OCR, develop a full fledged program capable of taking screenshots, processing the data of the screenshot and uploading the results to a .csv file.</p>
-                <p class="summary">Summary: Starting with a debate between me and a good friend on which players on our team were statistically underperforming, a need for automated data collection rose as tracking the high number of variables
-                    became a time-consuming process. Starting out by developing a lightweight screenshot program in C++, this was my first 'serious' C++ project and the first real project that required proper safe memory handling and allocation,
-                    also my introduction to garbage collection (<i>countless times I shot myself in the foot and crashed my PC</i>). The screenshot program's hardest challenge was ensuring that thread-processes would not 'interrupt' others and cause
-                    frame skips and drops when in game. After developing the screenshot tool, I began to develop an OCR using Google's PyTesseract- at the time I chose Python because it seemed like the easiest language to make the AI in, which came out 
-                    to be a major mistake later on, after developing a bare bones version- the AI was trained using my own data and images that I had from before. One of the largest challenges throughout this project was to ensure AI OCR accuracy, early
-                    iterations had roughly 65% accuracy, which for OCR was very lackluster. After some help with chroma filters, deskew, and image sharpening from a fellow peer, the accuracy shot up to around 95%, which for the sake of this project, I 
-                    declared as 'good enough for now'. The final (and arguably hardest) step was combining both programs into an application form using C#, combining both programs was incredibly tedious, as the Python program would not listen to certain 
-                    commands when given input through C#, but when manually commanded through Python- it would react properly. Combining both programs and adding a functional UI was a rough first introduction into fullstack development, and if I was to go 
-                    back I would certainly not use python for the OCR process, opting for C++ or Rust instead.
+                <p class="summary">
+                    <li>Gained major experience using PyTesseract- Google's wrapper for their Tesseract OCR</li>
+                    <li>Developed lightweight C++ screenshot program with formal GC and thread optimization</li>
+                    <li>Integrated C++ screenshot program and Python OCR program into a C# program with functional UI, designed for Windows Desktop conventional usage</li>
+                    <li>Learned intracies of computer vision and approach methodology, using a reiterative process with a fixed scope</li>
+                    <li>Trained CV program using personal dataset and developed image tuning customization to allow for easier training using chroma filters, deskew, and image sharpening</li>
+                    <li>Through reiteration and improvements in efficiency, overall accuracy went from 65% to 85%</li>
                 </p>
                 <hr class="separator">
                 <h2 class="project-name">Dyno Driveshaft Model</h2>
                 <p class="keywords">Keywords: Reverse Engineering, SOLIDWORKS</p>
                 <p class="objectives">Objectives: Reverse engineer model a driveshaft in SOLIDWORKS to an accuracy of a 0.001".</p>
-                <p class="summary">Summary: A personal project turned work project- this projects purpose was to make an in-house model of a driveshaft used in a dyno cell configuration without having to outsource the work, using a digital caliper &
-                     micrometer, each part required precise measurement and referencing old ISO standards for dimension ratios. Due to its shapely design, the SAE 1550 Flange Yoke came out to be the hardest part to design, as measurements provided in 
-                     correlating documentation came out unclear and lacked required precision, to combat this issue: I traced the outline of the shape, photo scanned and input the file into SOLIDWORKS, using a reference dimension I was able to correctly
-                     scale the trace and make a perfect replica of the shape of the flange yoke. </p>
-                <hr class="separator">
-                <h2 class="project-name">Steam Spam Caller</h2>
-                <p class="keywords">Keywords: AutoHotKey, Git</p>
-                <p class="objectives">Objectives: Using AutoHotKey, design a macro that is able to continuously call someone on Steam. An introduction to using Git related features.
-                <p class="summary">Summary: The Steam call sound effect is incredibly annoying, like a bell ringing except the audio jumps between left-right channels. Me and my friends would often spam call one another on Steam to spite one another, and
-                    after realizing the manual labor wasn't needed, I began developing an AutoHotKey script that used keyboard shortcuts to continuously call someone. This projects main purpose was to introduce me to Git conventions and how to properly use
-                    source-control.
+                <p class="summary">
+                     <li>Developed driveshaft SOLIDWORKS model involving SAE 1550 Flange Yoke to be used for a dynocell connection</li>
+                     <li>Learned reverse engineering methodology and approaches</li>
+                     <li>Measured and designed every part with an accuracy of 0.001" using micrometer and digital caliper</li>
+                     <li>Designed according to ISO automotive standards for dimension ratios</li>
                 </p>
-                <hr class="separator">
+                <hr class = "separator">
+                <h2 class="project-name">sharykin.me</h2>
+                <p class="keywords">Keywords: HTML, CSS, JavaScript, Networking</p>
+                <p class="objectives">Objectives: Develop a portfolio website with a focus on performance and simple-aesthetics, gain proficiency in CSS, gain further experience with DNS & large-scale networking.</p>
+                <p class="summary">
+                    <li>Developed a portfolio website</li>
+                    <li>Focus on performance using Google Lighthouse and WebPageTest results</li>
+                    <li>Optimized for simple-aesthetics to ensure clean user experience, whilst also accessible and search engine optimized.</li>
+                    <li>Used domain as a part of a Cloudflare reverse-proxy configuration for HomeLab server to increase safety of direct-ip connections.</li>
+                    <li>Improved understanding of network infrastructure through the use of DNS configuration, and .htaccess tweaks</li>
+                    <li>Developed a dark-light mode toggle for the website</li>
+                    <li>Followed Googles recommended practice for sitemaps, webmanifests, service-workers, Google Analytics, and site-crawlers</li>
+               </p>
+
             </div>
         </div>
     </body>
