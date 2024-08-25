@@ -301,7 +301,7 @@ body {
 
 .description{
     font-size:15px;
-    color:#FFFFFFde;
+    color:#DADADA;
     margin: 0px;
 }
 
@@ -321,24 +321,24 @@ body {
 
 .center-text h2{
     font-size: 45px;
-    color:#FFFFFFed;
+    color:#DADADA;
     text-align: center;
     width: 80%;
 }
 
 .center-text h2 a{
-    color:#fffffff1;
+    color:#DADADA;
     margin-right: 0px;
 
 }
 
 .center-text a{
-    color:#fffffff1;
+    color:#DADADA;
 }
 
 .center-text a:hover {
     text-decoration: underline dotted; 
-    color: #fffffff1;
+    color: #DADADA;
 }
 
 .head {
@@ -373,24 +373,24 @@ body {
 .header-title {
     font-size: 45px;
     font-weight: bold;
-    color: #FFFFFFde;
+    color: #DADADA;
     white-space: nowrap;
     margin: 0;
 }
 
 .header-title a {
-    color: #FFFFFFde;
+    color: #DADADA;
     text-decoration: underline;
 }
 
 .header-title a:hover {
     text-decoration: underline dotted;
-    color: #fffffff1;
+    color: #DADADA;
 }
 
 body.dark-mode{
     background-color: #212730;
-    color: #fffffff1;
+    color: #DADADA;
     --seperator-border-color: #ffffff;
 }
 
